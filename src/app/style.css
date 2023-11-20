@@ -1,0 +1,177 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"); */
+.mnue {
+  background-color: var(--blackColor);
+}
+.mnue .links ul {
+  list-style: none;
+  color: var(--whiteColor);
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+}
+.mnue .links ul li a {
+  color: var(--whiteColor);
+  transition: 0.6s color;
+  font-size: 20px;
+}
+.mnue .links ul li a:hover {
+  color: var(--mainColor);
+}
+
+.mnue .informitions h1 {
+  font-weight: 700;
+  color: var(--grayColor);
+  font-family: "Cairo", sans-serif;
+}
+.login .form,
+.register .form {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.form form input {
+  text-transform: none;
+  background-color: var(--whiteColor);
+}
+.main-form {
+  background-color: #ffffff;
+}
+.register .col-6.d-flex.align-items-center {
+  height: 80vh;
+}
+
+.register {
+  background-color: var(--whiteColor);
+}
+.register,
+.register .container,
+.register .container > .row {
+  min-height: calc(100vh - 100px);
+}
+.register .img {
+  min-height: 80vh;
+}
+form div:not(:first-child, :last-child) {
+  position: relative;
+}
+form div:not(:first-child, :last-child) i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  color: var(--blackColor);
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+.main-image {
+  background-color: var(--grayColor);
+}
+.main-image a {
+  border-radius: 0;
+}
+.main-image .btns .sign-up {
+  background-color: var(--mainColor);
+  transition: 0.3s background-color;
+}
+.main-image .btns .sign-up:hover {
+  background-color: #039ea5;
+}
+.add-product,
+.add-product .container {
+  background-color: var(--whiteColor);
+  min-height: 100vh;
+}
+.add-product .container .row {
+  height: 80vh;
+}
+.add-product .upload-img label {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed var(--blackColor);
+  text-align: center;
+  line-height: 341px;
+}
+
+span.loading {
+  display: block;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  border: 4px solid var(--mainColor);
+  border-bottom-color: transparent;
+  animation: router infinite 1s both;
+}
+@keyframes router {
+  0% {
+    transform: translate(-50%, -50%) rotate(16deg);
+  }
+  5% {
+    transform: translate(-50%, -50%) rotate(32deg);
+  }
+  10% {
+    transform: translate(-50%, -50%) rotate(48deg);
+  }
+  15% {
+    transform: translate(-50%, -50%) rotate(64deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(80deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(96deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(112deg);
+  }
+  35% {
+    transform: translate(-50%, -50%) rotate(128deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(144deg);
+  }
+  45% {
+    transform: translate(-50%, -50%) rotate(160deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(176deg);
+  }
+  55% {
+    transform: translate(-50%, -50%) rotate(192deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(208deg);
+  }
+  65% {
+    transform: translate(-50%, -50%) rotate(224deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotate(240deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(256deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotate(272deg);
+  }
+  85% {
+    transform: translate(-50%, -50%) rotate(290deg);
+  }
+  90% {
+    transform: translate(-50%, -50%) rotate(316deg);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(332deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(348deg);
+  }
+  /* 100% {
+    transform: translate(-50%, -50%) rotate(220deg);
+  } */
+}
