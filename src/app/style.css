@@ -90,6 +90,9 @@ form div:not(:first-child, :last-child) i {
   text-align: center;
   line-height: 341px;
 }
+.user-page {
+  min-height: 100vh;
+}
 
 span.loading {
   display: block;

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { userContext } from "../context/userContext";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ const Login = () => {
         password,
       })
       .then((data) => {
-        console.log(data.data);
+        toast.success(data.data.msg);
         setState({
           user: data.data.user,
           token: data.data.token,

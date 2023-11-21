@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import UserRouter from "@/app/router/userRouter";
+import { toast } from "react-toastify";
 import Image from "next/image";
 
 const AddProduct = () => {
@@ -13,17 +14,17 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post(`http://localhost:5000/api/product/add`, {
+      .post(`/product/add`, {
         name,
         description,
         price,
         section,
       })
       .then((data) => {
-        console.log(data);
+        toast.success(data.data.msg);
       })
       .catch((err) => {
-        console.log(err);
+        toast.error(err.response.data.msg);
       });
   };
   return (
