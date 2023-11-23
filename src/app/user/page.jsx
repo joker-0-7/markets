@@ -9,8 +9,9 @@ const UserPage = () => {
     <UserRouter>
       <div className="user-page">
         <div className="container">
-          <h1> مرحبا بك يا {(state && state.user.name) || " "}</h1>
-          <Products />
+          <div className="products mt-5">
+            <Products />
+          </div>
         </div>
       </div>
     </UserRouter>

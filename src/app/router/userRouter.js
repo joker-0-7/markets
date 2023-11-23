@@ -6,7 +6,7 @@ import Loading from "../components/loading";
 
 const UserRouter = ({ children }) => {
   const [ok, setOk] = useState(false);
-  const [state] = useContext(userContext);
+  const [state, setState] = useContext(userContext);
   const router = useRouter();
   useEffect(() => {
     if (state && state.token) checkCurrent();
@@ -17,6 +17,8 @@ const UserRouter = ({ children }) => {
       const { data } = await axios.get(`users/current`);
       if (data.ok) setOk(true);
     } catch (err) {
+      setState(null);
+      window.localStorage.removeItem("auth");
       router.push("/login");
     }
   };
